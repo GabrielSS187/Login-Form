@@ -96,4 +96,6 @@ button:hover{
 export const TextErros = styled.p`
 color: ${({color}) => color};
 text-align: center;
+
+font-size: clamp(.700rem, 2vw, .750rem);
 `;

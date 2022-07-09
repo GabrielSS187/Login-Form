@@ -11,7 +11,7 @@ export const Home = () => {
       <Route  path="/" element={<Login />} />
       <Route path="/admin" element={<Admin />} />
 
-      <Route path="*"  element={<h1 className="h1-not-found">Page Not Found</h1>} />
+      <Route path="*" element={<h1 className="h1-not-found">Page Not Found</h1>} />
 
     </Routes>
     </BrowserRouter>
