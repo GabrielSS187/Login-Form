@@ -5,9 +5,13 @@ export const FooterGlobal = styled.footer`
   color: var(--text);
 
   width: 100%;
-  text-align: center;
+  height: 25px;
 
-  position: absolute;
-  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  font-size: clamp(.800rem, 2.5vw, .900rem);
   
 `;

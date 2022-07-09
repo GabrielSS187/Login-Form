@@ -1,7 +1,7 @@
 import {  useEffect } from "react";
 
-import { FormLoginUtils } from "./Organization/formLoginUtils";
-import { FormCadasterUtils } from "./Organization/formCadasterUtils";
+import { FormLoginUtils } from "./utils/formLoginUtils";
+import { FormCadasterUtils } from "./utils/formCadasterUtils";
 
 import { useNavigate } from "react-router-dom";
 
@@ -56,6 +56,7 @@ useEffect(() => {
        <div className="forms">  	
               <input type="checkbox" id="chk" aria-hidden="true" />
 
+              {/* Form signup */}
               <div className="signup">
                 <motion.li variants={item}>
                     <form onSubmit={sendValuesFormCadaster}>
@@ -78,7 +79,7 @@ useEffect(() => {
                 </motion.li>
             </div>
 
-
+            {/* Form login */}
             <div className="login">
               <motion.li variants={item}>
                   <form onSubmit={sendValuesFormLogin}>
